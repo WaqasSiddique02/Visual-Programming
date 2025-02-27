@@ -1,0 +1,48 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+
+}
+
+.top-header{
+    display:flex;
+    flex-direction:row;
+}
+
+.header-image{
+    height:30vh;
+    width:18%;
+    background-color:cadetblue;
+    margin-right:30px;
+}
+
+.header-table {
+    height: 30vh;
+    width: 77%;
+}
+
+table{
+    margin:20px;
+}
+
+th{
+    font-size:25px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+td{
+    font-family:'Times New Roman';
+    font-size:18px;
+}
+
+.heading{
+    font-weight:bolder;
+}
+
+.content-section{
+    margin-top:20px;
+}
+
+.content-section h3{
+    color:cadetblue;
+}

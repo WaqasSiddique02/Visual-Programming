@@ -1,0 +1,152 @@
+﻿@page "/RegistrationPage"
+<h3>Component</h3>
+
+@code {
+	
+}
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AU Faculty Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            color: rgb(36, 127, 201);
+            padding: 6px;
+            text-align: center;
+            border-bottom: 1px solid rgb(36, 127, 201);
+        }
+
+        header h1 {
+            display: inline-block;
+            width: 90%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .form-box {
+            display: flex;
+            width: 60%;
+            background-color: #e8f0fe;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .info-section h2 {
+            margin-bottom: 10px;
+        }
+
+        .info-section p,ul{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #5c5757;
+        }
+
+        .login-section {
+            flex: 1;
+            padding: 20px;
+            border-left: 1px solid #ccc;
+        }
+
+        .login-section h2 {
+            margin-bottom: 15px;
+        }
+
+        .login-section input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-btn {
+            width: 100%;
+            background-color: rgb(29, 113, 182);
+            padding: 10px;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: rgb(36, 127, 201);
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid rgb(146, 147, 148);
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #f8f9fa;
+        }
+
+        footer p {
+            color: rgb(137, 139, 141);
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="airlogo.png" height="70px" width="100px" alt="Air University Logo">
+        <h1>Air University Online Faculty Portal</h1>
+    </header>
+
+    <div class="container">
+        <div class="form-box">
+            <div class="info-section">
+                <h2>AU Online Faculty Portal</h2>
+                <p>The Air University Online Faculty Portal provides access to all the necessary faculty-related portals
+                    for conducting semester activities efficiently.</p>
+                <h2>Instructions:</h2>
+                <ul>
+                    <li>Please utilize your current Username and Password as utilized in the Oracle System.</li>
+                    <li>Please email at <a href="mailto:Webmaster@au.edu.pk">Webmaster@au.edu.pk</a> for technical
+                        queries.</li>
+                </ul>
+            </div>
+
+            <div class="login-section">
+                <h2>Login Your Account</h2>
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter User Name" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+                <button class="login-btn">🔑 Login</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>© Copyright All Rights Reserved 2025</h3>
+        <p>Web Administration || Automation Department</p>
+    </footer>
+
+</body>
+</html>
